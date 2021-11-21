@@ -9,33 +9,57 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    opacity: 90%;
+    opacity: 93%;
 }
-.logo{
-    height: 40px;
-    width: 40px;
-    overflow: none;
+nav ul span{
+  color: #8307b0;
+  text-align: right;
+  padding: 2% 2%;
+  font-size: 18px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(36, 34, 34);
-    position: sticky;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  .container{
-      position: relative;
-  }
+nav{
+  display: flex;
+  padding: 1% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 60px;
+}
+.nav_links{
+  flex: 1;
+  text-align: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.nav_links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav_links ul li a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+.nav_links ul li::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #8307b0;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+  width: 100%;
+}
+.header_text h1{
+  padding: 20 20;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px
+}
