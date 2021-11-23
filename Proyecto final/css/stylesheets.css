@@ -12,7 +12,7 @@
     opacity: 93%;
 }
 nav ul span{
-  color: #8307b0;
+  color: #710FB4;
   text-align: right;
   padding: 0% 4%;
   font-size: 18px;
@@ -25,6 +25,7 @@ nav{
 }
 nav img{
   width: 60px;
+  cursor: pointer;
 }
 .nav_links{
   flex: 1;
@@ -48,10 +49,11 @@ nav img{
   content: "";
   width: 0%;
   height: 2px;
-  background: #8307b0;
+  background: #710FB4;
   display: block;
   margin: auto;
   transition: 0.5s;
+  cursor: pointer;
 }
 .nav_links ul li:hover::after{
   width: 100%;
@@ -63,19 +65,69 @@ nav img{
   font-family: 'Bebas Neue', cursive;
   font-size: 40px
 }
-.footer{
-  padding: 0 0;
-  margin: 0 0;
-  background-color: white;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  position: relative;
+.footer_container{
+  background-color: #710FB4;
+  padding: 3rem 0 3rem 0;
 }
-.footer_content ul li img{
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  position: relative;
-  list-style: none;
+.footer{
+  width: 100%;
+  height: 23vh;
+  background-color: #710FB4;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer_heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+.footer_heading h2{
+  margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer_heading a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer_heading a:hover{
+  color: black;
+  transition: 0.4s;
+}
+.footer_email_form h2{
+  margin-bottom: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#footer_email{
+  height: 40px;
+  width: 250px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer_email_button{
+  height: 40px;
+  width: 100px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #25023D;
+  color: #E8E8E8;
+  font-size: 1rem;
+}
+#footer_email::placeholder{
+  color: #b1b1b1;
+}
+#footer_email_button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 0.4s ease-out;
 }
