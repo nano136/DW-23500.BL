@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* header starts */
 .header{
     min-height: 100vh;
     width: 100%;
@@ -58,35 +59,102 @@ nav img{
 .nav_links ul li:hover::after{
   width: 100%;
 }
-.header_text h1{
-  padding: 20 20;
-  text-align: center;
-  color: aliceblue;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 40px
+/* header ends */
+
+/* slider */
+.main_container{
+  background-color: rgb(65, 64, 64);
 }
-.footer_container{
+
+.slider_container{
+  margin: auto;
+  background-color: rgb(65, 64, 64);
+  width: 90%;
+  padding: 10px;
+  align-items: center;
+}
+ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slider{
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.slider li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  background-color: rgb(65, 64, 64);
+  transition: opacity.5s;
+}
+.slider li img{
+  height: 800px; 
+  width: 100%; 
+  max-width: 100%; 
+  max-height: 800px;
+  object-fit: cover;
+}
+.slider li:first-child{
+  opacity: 1;
+}
+.slider li:target{
+  opacity: 1;
+}
+
+.menu{
+  text-align: center;
+  margin: 20px;
+}
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
   background-color: #710FB4;
-  padding: 2rem 0 4rem 0;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+/* footer starts */
+.footer_container{
+  height: auto;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
 }
 .footer{
-  width: 100%;
-  height: 23vh;
-  background-color: #710FB4;
+  width: 93%;
+  height: 30vh;
+  background-color: rgb(44, 44, 44);
   color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  border: none;
+  border-radius: 15px;
+  padding: 0;
 }
 .footer_heading{
   display: flex;
   flex-direction: column;
   margin-right: 10rem;
+  padding-top: 1rem;
 }
 .footer_heading h2{
   margin-bottom: 1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #710FB4;
 }
 .footer_heading a{
   color: white;
@@ -95,12 +163,14 @@ nav img{
   font-family: Arial, Helvetica, sans-serif;
 }
 .footer_heading a:hover{
-  color: black;
+  color: #710FB4;
   transition: 0.4s;
 }
 .footer_email_form h2{
   margin-bottom: 2rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #710FB4;
+  padding-top: 1rem;
 }
 #footer_email{
   height: 40px;
