@@ -67,13 +67,13 @@ nav img{
 }
 .footer_container{
   background-color: #710FB4;
-  padding: 3rem 0 3rem 0;
+  padding: 2rem 0 4rem 0;
 }
 .footer{
   width: 100%;
   height: 23vh;
   background-color: #710FB4;
-  color: black;
+  color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
