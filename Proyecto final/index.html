@@ -10,6 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
+<!-- Header starts -->
 <body>
     <section class="header">
             <nav>
@@ -30,38 +32,82 @@
             </nav>
         </div>
     </section>
-    <section class="main_container">
-        <!-- slider starts -->
-            <div class="slider_container">
-                <ul class="slider">
-                    <li id="slide1">
-                        <img src="./images/9zjpg.jpg" alt="">
-                    </li>
-                    <li id="slide2">
-                        <img src="./images/Claro-Gaming-Academy-9Z-Team-GamersRd.jpg" alt="">
-                    </li>
-                    <li id="slide3">
-                        <img src="./images/9zsliderimagen.jpg" alt="">
-                    </li>
-                </ul>
+    <!-- Header ends -->
 
-                <ul class="menu">
-                    <li>
-                        <a href="#slide1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3">3</a>
-                    </li>
-                </ul>
+    <!-- main starts -->
+    <main>
+        <div class="slider_container">
+        <div class="slider">
+            <div class="slides">
+                <!-- radio buttons -->
+                <input type="radio" name="radio_button" id="radio1">
+                <input type="radio" name="radio_button" id="radio2">
+                <input type="radio" name="radio_button" id="radio3">
+                <!-- radio buttons -->
+                <!-- slides images -->
+                <div class="slide first">
+                    <img src="./images/9zsliderimagen.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/9zjpg.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/Claro-Gaming-Academy-9Z-Team-GamersRd.jpg" alt="">
+                </div>
+                <!-- slide images -->
+                <!-- automatic navigation -->
+                <div class="navigation_auto">
+                    <div class="auto_button1"></div>
+                    <div class="auto_button2"></div>
+                    <div class="auto_button3"></div>
+                </div>
+                <!-- automatic navigation -->
             </div>
-            <!-- slider ends -->
+            <!-- manual navigation --> 
+            <div class="navigation_manual">
+                <label for="radio1" class="manual_button"></label>
+                <label for="radio2" class="manual_button"></label>
+                <label for="radio3" class="manual_button"></label>
+            </div>
+            <!-- manual navigation -->
         </div>
-    </section>
+    </div>
+        <div class="main_medianews">
+            <div class="main_medianews_videos">
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/Pz9mVgxg_tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <iframe width="450" height="300" src="https://www.youtube.com/embed/_QJOvumwzsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- videos end -->
+            <div class="main_medianews_videos2">
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/ea2DkQV51YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/bds_vIv7ttQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Shop -->
+        <div class="main_shop">
+            <div class="shop_text_container">
+                <h2>Tienda</h2>
+            </div>´
+
+            <div id="shop_products_container">
+                <div class="shop_products">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                    <img src="./images/9z camiseta 1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- main ends -->
+
+<!-- footer starts -->
     <section class="footer_container">
-        <!-- footer starts -->
         <div class="footer">
             <div class="footer_heading footer-1">
                 <!-- Explore pages -->
@@ -97,7 +143,7 @@
                 <input type="submit" value="Sign Up" id="footer_email_button">
             </div>
         </div>
-        <!-- footer ends -->
     </section>
+    <!-- footer ends -->
 </body>
 </html>
