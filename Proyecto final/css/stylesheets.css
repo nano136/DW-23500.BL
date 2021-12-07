@@ -72,7 +72,6 @@ nav img{
 main{
   margin: 0;
   padding: 0;
-  display: grid;
   background-image: linear-gradient(180deg,#480177,black);
 }
 .slider{
@@ -80,8 +79,15 @@ main{
   height: 600px;
   border-radius: 5px;
   overflow: hidden;
-  border: solid #710FB4;
+  border: solid black;
   margin: 10px;
+  
+}
+.slider_container{
+  align-self: center;
+  display: flex;
+  position: relative;
+  margin-left: 16rem;
 }
 .slides{
   width: 500%;
@@ -183,8 +189,8 @@ main{
   width: 100%;
 }
 .main_medianews_videos iframe{
-  padding: 1rem;
-  margin: 0.3rem;
+  padding: 0.7rem;
+  margin: 1rem;
   float: left;
 }
 .main_medianews_videos2 iframe{
@@ -192,6 +198,9 @@ main{
   margin: 0.3rem;
   float: left;
 }
+
+
+
 /* Shop main */
 .shop_text_container{
   width: 100%;
@@ -317,3 +326,4 @@ main{
 }
 
 
+/* Shop page */
