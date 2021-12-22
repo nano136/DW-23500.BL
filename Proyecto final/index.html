@@ -9,69 +9,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.scss">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 
 <!-- Header starts -->
 <body>
-    <section class="header">
-            <nav>
-                <!-- nav starts -->
-                <a href="index.html"></a><img src="./images/9zteam_logo.png" alt="">
-                <div class="nav_links">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="./pages/Shop.html">Tienda</a></li>
-                        <li><a href="./pages/roster.html">Roster</a></li>
-                        <li><a href="./pages/9zinfo.html">Nuestra historia</a></li>
-                        <li><a href="./pages/news.html">Noticias</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                        <span>#TodoVioleta</span>
-                    </ul>
-                </div>
-                <!-- nav ends -->
-            </nav>
-        </div>
-    </section>
+    
+    <header>
+      
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="/images/9zteam_logo.png" alt="" width="55px"></a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Tienda</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Roster</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Noticias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">¿Quienes somos?</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="/images/Claro-Gaming-Academy-9Z-Team-GamersRd.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Slider One Item</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="/images/9z_campeon_la_liga_pro_trust.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Slider One Item</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="/images/maxresdefault-1.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Slider One Item</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+				</div>
+			</div>
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+	</div>
+	 </header>
     <!-- Header ends -->
 
     <!-- main starts -->
     <main>
-        <div class="slider_container">
-        <div class="slider">
-            <div class="slides">
-                <!-- radio buttons -->
-                <input type="radio" name="radio_button" id="radio1">
-                <input type="radio" name="radio_button" id="radio2">
-                <input type="radio" name="radio_button" id="radio3">
-                <!-- radio buttons -->
-                <!-- slides images -->
-                <div class="slide first">
-                    <img src="./images/9zsliderimagen.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/9zjpg.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./images/Claro-Gaming-Academy-9Z-Team-GamersRd.jpg" alt="">
-                </div>
-                <!-- slide images -->
-                <!-- automatic navigation -->
-                <div class="navigation_auto">
-                    <div class="auto_button1"></div>
-                    <div class="auto_button2"></div>
-                    <div class="auto_button3"></div>
-                </div>
-                <!-- automatic navigation -->
-            </div>
-            <!-- manual navigation --> 
-            <div class="navigation_manual">
-                <label for="radio1" class="manual_button"></label>
-                <label for="radio2" class="manual_button"></label>
-                <label for="radio3" class="manual_button"></label>
-            </div>
-            <!-- manual navigation -->
-        </div>
-    </div>
+        
+
         <div class="main_medianews">
             <div class="main_medianews_videos">
                 <iframe width="450" height="270" src="https://www.youtube.com/embed/Pz9mVgxg_tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -113,43 +130,67 @@
     <!-- main ends -->
 
 <!-- footer starts -->
-    <section class="footer_container">
-        <div class="footer">
-            <div class="footer_heading footer-1">
-                <!-- Explore pages -->
-                <h2>Explorar</h2>
-                <a href="#">Tienda</a>
-                <a href="#">Roster</a>
-                <a href="#">Nuestra Historia</a>
-                <a href="#">Noticias</a>
-                <a href="#">Contacto</a>
-            </div>
-            <div class="footer_heading footer-2">
-                <!-- Active rosters -->
-                <h2>Roster</h2>
-                <a href="#">CS:GO</a>
-                <a href="#">Valorant</a>
-                <a href="#">Free Fire</a>
-                <a href="#">CS:GO Academy</a>
-                <a href="#">Valorant Academy</a>
-            </div>
-            <div class="footer_heading footer-3">
-                <!-- Links socialmedia -->
-                <h2>Social</h2>
-                <a href="#">Youtube</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitch</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="footer_email_form">
-                <!-- Email contact -->
-                <h2>Enterate de las novedades!</h2>
-                <input type="email" placeholder="Ingresa tu correo electronico" id="footer_email">
-                <input type="submit" value="Sign Up" id="footer_email_button">
+    <footer class="page-footer bg-dark">
+
+        <div class="bg-success">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-container">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-youtube text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- footer ends -->
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Explorar</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#"> Tienda</a></li>
+                        <li class="my-2"><a href="#"> Nuestro equipo</a></li>
+                        <li class="my-2"><a href="#"> Noticias</a></li>
+                        <li class="my-2"><a href="#"> Nuestra historia</a></li>
+                        
+                    </ul>   
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Info</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#"> Terminos y condiciones</a></li>
+                        <li class="my-2"><a href="#"> Politicas de privacidad</a></li>
+                        <li class="my-2"><a href="#"> FAQ</a></li>
+                        <li class="my-2"><a href="#"> Accesibilidad</a></li>
+                        <li class="my-2"><a href="#"> Configuracion de privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="far fa-envelope mr-3"></i>9zteamcontacto@gmail.com</li>
+                        <li class="my-2"><i class="fab fa-linkedin mr-3"></i>9zteam</li>
+                        <li class="my-2"><i class="fab fa-twitter mr-3"></i>@9zteam</li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; Copyright</p>
+            <a href="#">9zteam.com</a>
+            <p>Designed by nano <i class="far fa-smile-wink"></i> </p>
+        </div>
+
+
+        
+    </footer>
+   
 </body>
 </html>
